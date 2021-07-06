@@ -1,0 +1,225 @@
+#inTurnBlurringTextG{
+	width:102px;
+	margin:auto;
+    display: inline-block;
+}
+
+.inTurnBlurringTextG{
+	color:transparent;
+	font-family:Arial;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	float:left;
+	text-shadow: $projectbackground 0 0 0;
+	animation-name:bounce_inTurnBlurringTextG;
+		-o-animation-name:bounce_inTurnBlurringTextG;
+		-ms-animation-name:bounce_inTurnBlurringTextG;
+		-webkit-animation-name:bounce_inTurnBlurringTextG;
+		-moz-animation-name:bounce_inTurnBlurringTextG;
+	animation-duration:4.55s;
+		-o-animation-duration:4.55s;
+		-ms-animation-duration:4.55s;
+		-webkit-animation-duration:4.55s;
+		-moz-animation-duration:4.55s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+}
+.inTurnBlurringTextGBlack{
+	color:transparent;
+	font-family:Arial;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	float:left;
+	text-shadow: $contactbackground 0 0 0;
+	animation-name:bounce_inTurnBlurringTextGBlack;
+		-o-animation-name:bounce_inTurnBlurringTextGBlack;
+		-ms-animation-name:bounce_inTurnBlurringTextGBlack;
+		-webkit-animation-name:bounce_inTurnBlurringTextGBlack;
+		-moz-animation-name:bounce_inTurnBlurringTextGBlack;
+	animation-duration:4.55s;
+		-o-animation-duration:4.55s;
+		-ms-animation-duration:4.55s;
+		-webkit-animation-duration:4.55s;
+		-moz-animation-duration:4.55s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+}
+#inTurnBlurringTextG_1{
+	animation-delay:1.63s;
+		-o-animation-delay:1.63s;
+		-ms-animation-delay:1.63s;
+		-webkit-animation-delay:1.63s;
+		-moz-animation-delay:1.63s;
+}
+#inTurnBlurringTextG_2{
+	animation-delay:1.95s;
+		-o-animation-delay:1.95s;
+		-ms-animation-delay:1.95s;
+		-webkit-animation-delay:1.95s;
+		-moz-animation-delay:1.95s;
+}
+#inTurnBlurringTextG_3{
+	animation-delay:2.28s;
+		-o-animation-delay:2.28s;
+		-ms-animation-delay:2.28s;
+		-webkit-animation-delay:2.28s;
+		-moz-animation-delay:2.28s;
+}
+#inTurnBlurringTextG_4{
+	animation-delay:2.6s;
+		-o-animation-delay:2.6s;
+		-ms-animation-delay:2.6s;
+		-webkit-animation-delay:2.6s;
+		-moz-animation-delay:2.6s;
+}
+#inTurnBlurringTextG_5{
+	animation-delay:2.93s;
+		-o-animation-delay:2.93s;
+		-ms-animation-delay:2.93s;
+		-webkit-animation-delay:2.93s;
+		-moz-animation-delay:2.93s;
+}
+#inTurnBlurringTextG_6{
+	animation-delay:3.25s;
+		-o-animation-delay:3.25s;
+		-ms-animation-delay:3.25s;
+		-webkit-animation-delay:3.25s;
+		-moz-animation-delay:3.25s;
+}
+#inTurnBlurringTextG_7{
+	animation-delay:3.58s;
+		-o-animation-delay:3.58s;
+		-ms-animation-delay:3.58s;
+		-webkit-animation-delay:3.58s;
+		-moz-animation-delay:3.58s;
+}
+#inTurnBlurringTextG_8{
+	animation-delay:3.9s;
+		-o-animation-delay:3.9s;
+		-ms-animation-delay:3.9s;
+		-webkit-animation-delay:3.9s;
+		-moz-animation-delay:3.9s;
+}
+
+
+
+
+@keyframes bounce_inTurnBlurringTextG{
+	0%{
+		text-shadow: $projectbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $contactbackground 0 0 16px;
+	}
+}
+
+@-o-keyframes bounce_inTurnBlurringTextG{
+	0%{
+		text-shadow: $projectbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $contactbackground 0 0 16px;
+	}
+}
+
+@-ms-keyframes bounce_inTurnBlurringTextG{
+	0%{
+		text-shadow: $projectbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $contactbackground 0 0 16px;
+	}
+}
+
+@-webkit-keyframes bounce_inTurnBlurringTextG{
+	0%{
+		text-shadow: $projectbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $contactbackground 0 0 16px;
+	}
+}
+
+@-moz-keyframes bounce_inTurnBlurringTextG{
+	0%{
+		text-shadow: $projectbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $contactbackground 0 0 16px;
+	}
+}
+
+@keyframes bounce_inTurnBlurringTextGBlack{
+	0%{
+		text-shadow: $contactbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $projectbackground 0 0 16px;
+	}
+}
+
+@-o-keyframes bounce_inTurnBlurringTextGBlack{
+	0%{
+		text-shadow: $contactbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $projectbackground 0 0 16px;
+	}
+}
+
+@-ms-keyframes bounce_inTurnBlurringTextGBlack{
+	0%{
+		text-shadow: $contactbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $projectbackground 0 0 16px;
+	}
+}
+
+@-webkit-keyframes bounce_inTurnBlurringTextGBlack{
+	0%{
+		text-shadow: $contactbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $projectbackground 0 0 16px;
+	}
+}
+
+@-moz-keyframes bounce_inTurnBlurringTextGBlack{
+	0%{
+		text-shadow: $contactbackground 0 0 0;
+	}
+
+	100%{
+		text-shadow: $projectbackground 0 0 16px;
+	}
+}

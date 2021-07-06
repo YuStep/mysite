@@ -1,0 +1,103 @@
+html {
+  background-color: $black;
+  color: $white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: color 800ms, background-color 800ms;
+
+  &.white {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: $white;
+    color: $black;
+  }
+  &.white a{
+    color:$black;
+  }
+
+  body {
+    &[class*="-open"] {
+      .main {
+        
+        filter: blur(10px);
+        
+        
+      }
+    }
+
+    &.in {
+      .color,
+      .header {
+        filter: blur(0);
+        opacity: 1;
+      }
+
+      .main-content {
+        opacity: 1;
+      }
+    }
+  }
+
+  .main {
+    transition: filter 800ms;
+    will-change: filter;
+  }
+
+  .header,
+  .color {
+    filter: blur(10px);
+    opacity: 0;
+  }
+
+  .main-content {
+    opacity: 0;
+    height:100vh;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.close {
+  color: $white;
+  cursor: pointer;
+  font-size: 2.5rem;
+  line-height: 1rem;
+  padding: 2rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+img.logo-image {
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 360px;
+  z-index: 1;
+
+  &.in {
+    opacity: 1;
+  }
+
+  @media (max-width: 1200px) {
+    width: 240px;
+  }
+
+  @media (max-width: 800px) {
+    width: 180px;
+  }
+
+  @media (max-width: 600px) and (orientation: portrait) {
+    display: none;
+  }
+}

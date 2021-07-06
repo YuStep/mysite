@@ -1,0 +1,50 @@
+.contact {
+  align-items: center;
+  background-color: $contactbackground;
+  bottom: 0;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  transition: color 800ms, background-color 800ms,opacity 1s;
+  
+  .contact-inner {
+    text-align: center;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+html {
+  &:not(.white) {
+    .contact {
+      background-color: $contactbackgroundblack;
+      color: $white;
+      transition: color 800ms, background-color 800ms,opacity 1s;
+    }
+  }
+}
+
+.contact-open {
+  .contact {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

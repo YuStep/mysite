@@ -1,0 +1,23 @@
+$amiri:"Amiri",serif;
+$fuggles:"Fuggles",cursive;
+$serif: 'Cormorant Garamond', serif;
+
+$barelyblack: rgba(0, 0, 0, .1);
+$black: #000;
+$gray: #666;
+$white: #fff;
+$halfblack: rgba(0, 0, 0, .5);
+$halfwhite: rgba(255, 255, 255, .5);
+
+$fsbackground: #f8f3f2;
+$projectbackground: rgba(0, 0, 0, .9);
+$contactbackground: rgba(255, 255, 255, 1);
+$contactbackgroundblack: rgba(0, 0, 0,1);
+
+$vh40: calc(var(--vh, 1vh) * 40);
+$vh50: calc(var(--vh, 1vh) * 50);
+$vh100: calc(var(--vh, 1vh) * 100);
+
+$cubic: cubic-bezier(.24, .44, .18, .94);
+
+$headerwidth: 14%;

@@ -1,0 +1,78 @@
+.loader {
+  align-items: center;
+  cursor: s-resize;
+  display: flex;
+  flex-direction: column;
+  height: $vh100;
+  justify-content: center;
+  line-height: 1.33;
+  position: relative;
+  width: 100vw;
+  z-index: 1;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25em;
+  }
+
+  h1,
+  h2 {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+
+    span {
+      opacity: 1;
+      position: relative;
+      top: 0;
+
+      &.in {
+        top: 0;
+      }
+    }
+  }
+
+  .nudge-arr {
+    bottom: 2rem;
+    font-size: 1rem;
+    opacity: 0;
+    position: absolute;
+
+    &.in {
+      animation: nudgeArrow 1s infinite ease-in-out;
+      opacity: 1;
+    }
+  }
+
+  &.no-arr {
+    .nudge-arr {
+      animation: none;
+      opacity: 0 !important;
+    }
+  }
+}
+
+.pix {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 1px;
+}
+
+@keyframes nudgeArrow {
+  0% {
+    bottom: 2rem;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 3rem;
+    opacity: 0;
+  }
+}

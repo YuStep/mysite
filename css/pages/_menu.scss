@@ -1,0 +1,38 @@
+.header {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  width: $headerwidth;
+  z-index: 2;
+
+  .menu {
+    box-sizing: border-box;
+    padding: 2rem;
+
+    a {
+      display: inline-block;
+      padding-bottom: 0.25em;
+      
+      &::after {
+        bottom: 0.5em;
+      }
+    }
+  }
+
+  .logo {
+    bottom: 0;
+    padding: 2rem 2.5rem;
+    position: absolute;
+    right: 100%;
+    text-align: right;
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+    white-space: nowrap;
+
+    &::after {
+      display: none;
+    }
+  }
+}

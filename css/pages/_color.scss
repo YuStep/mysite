@@ -1,0 +1,39 @@
+.color {
+  position: fixed;
+  right: 1.8rem;
+  top: 1.6rem;
+  z-index: 12;
+
+  &.in {
+    filter: none;
+    opacity: 1;
+  }
+
+  a {
+    display: inline-block;
+    padding: 4px 8px;
+
+    &::after {
+      display: none;
+    }
+    
+    &:hover {
+      opacity: 0.5;
+    }
+
+    i {
+      background-color: $black;
+      border: 1px solid;
+      display: inline-block;
+      height: 6px;
+      transform: rotate(45deg);
+      width: 6px;
+    }
+
+    &.white {
+      i {
+        background-color: $white;
+      }
+    }
+  }
+}

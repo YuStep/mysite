@@ -1,0 +1,149 @@
+@import "_fonts.scss";
+@import "_vars.scss";
+@import "_typography.scss";
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+.home-page {
+  .main-content {
+    display: flex;
+    overflow: hidden;
+    transition: opacity 600ms;
+
+    & > * {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+.skill-list {
+  ul {
+    padding: 2rem 2rem 2rem ($headerwidth * 2);
+
+    li {
+      line-height: 1.125;
+      padding-bottom: 0.66em;
+      padding-top: 0.33em;
+
+      &.tag {
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-weight: 800;
+        text-transform: uppercase;
+        animation: nudgeArrow 1s infinite ease-in-out;  
+        opacity: 1;
+        &:not(:first-child) {
+          margin-top: 2em;
+        }
+      }
+
+      &.list-item {
+        cursor: pointer;
+
+        &.soon {
+          pointer-events: none;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .loading-text{
+    position: relative;
+  }
+}
+
+.image-list {
+  ul{
+    list-style: none;
+  }
+  
+  article {
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    figure {
+      &,
+      img {
+        width: 100%;
+      }
+    }
+
+    &.hover {
+      z-index: 1;
+    }
+  }
+}
+
+.photos-page {
+  .photos {
+    box-sizing: border-box;
+    margin: 2rem 2rem 2rem 14%;
+    min-height: 101vh;
+    padding: 60px 0 0 30px;
+
+    figure {
+      opacity: 0;
+      transform: translate3d(0, 0, 0);
+      transition: opacity 80ms;
+
+      &[data-macy-complete="1"]  {
+        opacity: 1;
+      }
+
+      img {
+        cursor: pointer;
+        display: block;
+      }
+    }
+  }
+}
+.project {
+  &.photos-viewer {
+    figure {
+      transition: all 200ms;
+
+      .img {
+        background-size: contain;
+      }
+
+      img {
+        height: calc(100vh - 4.5rem);
+        object-fit: contain;
+      }
+
+      &.notrans {
+        transition: opacity 200ms;
+      }
+    }
+  }
+}
+#canvas.visible{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: white;
+  visibility: visible;
+}
+#canvas{
+  visibility: hidden;
+  position: absolute;
+}
+@import "pages/color";
+@import "pages/contact";
+@import "pages/loader";
+@import "pages/main";
+@import "pages/menu";
+@import "pages/animate-text";
